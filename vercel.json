@@ -4,10 +4,12 @@
     { "src": "frontend/*.html", "use": "@vercel/static" },
     { "src": "frontend/styles.css", "use": "@vercel/static" },
     { "src": "frontend/script.js", "use": "@vercel/static" },
-    { "src": "api/generate.js", "use": "@vercel/node" }
+    { "src": "api/generate.js", "use": "@vercel/node" },
+    { "src": "api/upload-logo.js", "use": "@vercel/node" }
   ],
   "routes": [
     { "src": "/api/generate", "dest": "/api/generate.js" },
+    { "src": "/api/upload-logo", "dest": "/api/upload-logo.js" },
     { "src": "/(.*)", "dest": "/frontend/$1" }
   ]
 }
