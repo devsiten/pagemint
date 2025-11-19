@@ -17,7 +17,8 @@
   <div class="form-card">
     <h2 class="form-title">Create Token Page</h2>
 
-    <form id="tokenForm">
+    <!-- FIXED FORM TAG BELOW -->
+    <form id="tokenForm" enctype="multipart/form-data" onsubmit="return false;">
 
       <label>Token Name</label>
       <input id="name" required>
